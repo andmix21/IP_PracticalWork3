@@ -1,0 +1,57 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color:dodgerblue;
+    padding: 20px;
+    gap: 20px;
+    display:grid;
+    grid-template-columns: 150px auto 150px;
+    grid-template-rows: 50px 30px;
+    grid-template-areas:
+    "logo search login"
+    ". options .";
+}
+
+.logo {
+    background-color: green;
+    grid-area: logo;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: auto 100px;
+    grid-area: search;
+}
+
+.search__input {
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.search__button {
+    background-color: palevioletred;
+    font-size: 20px;
+}
+
+.login {
+    background-color: green;
+    grid-area: login;
+}
+
+.options {
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-area: options;
+}
+
+.opions__button {
+    background-color:navy;
+    color: white;
+    font-size: 18px;
+}
